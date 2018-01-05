@@ -1,0 +1,127 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://tesco.com/id/gtin/05052320564019>
+  a <http://gs1.org/voc/Offer>, <https://schema.org/Offer> ;
+  gs1:itemOffered <https://www.tesco.com/groceries/en-GB/products/268419141> ;
+  schema:description "Tesco Unsalted Mixed Nuts Snacks 200g"@en ;
+  schema:priceSpecification [
+    a gs1:PriceSpecification, schema:PriceSpecification ;
+    schema:eligibleQuantity [
+      a gs1:QuantitativeValue, schema:QuantitativeValue ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:value "1"^^xsd:float
+    ] ;
+    schema:price "2.00"^^xsd:float ;
+    schema:priceCurrency "GBP"^^xsd:string
+  ] .
+
+<https://www.tesco.com/groceries/en-GB/products/268419141>
+  a gs1:FoodBeverageTobaccoProduct, schema:Product ;
+  gs1:carbohydratesPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "8.0"^^xsd:float
+  ] ;
+  gs1:consumerSafetyInformation "Not suitable for small children who can choke on nuts.  Caution: This product may occasionally contain small fragments of shell."@en ;
+  gs1:consumerStorageInstructions "Store in a cool, dry place.,Once opened store in an airtight container."@en ;
+  gs1:countryOfLastProcessing [
+    a gs1:Country, schema:Country ;
+    gs1:countryCode "GB"^^xsd:string
+  ] ;
+  gs1:dietCode [
+    a gs1:DietTypeCodeDetails ;
+    gs1:dietType gs1:DietTypeCode-VEGAN
+  ] ;
+  gs1:dietTypeDescription "Suitable for vegans"@en ;
+  gs1:energyPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "KJO"^^xsd:string ;
+    schema:value "2608"^^xsd:float
+  ], [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "E14"^^xsd:string ;
+    schema:value "631"^^xsd:float
+  ] ;
+  gs1:fatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "55.2"^^xsd:float
+  ] ;
+  gs1:fibrePerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "9.3"^^xsd:float
+  ] ;
+  gs1:gtin "05052320564019"^^xsd:string ;
+  gs1:ingredient [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Almonds"@en ;
+    gs1:ingredientSequence 1
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Cashew Nuts"@en ;
+    gs1:ingredientSequence 2
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Brazil Nuts"@en ;
+    gs1:ingredientSequence 3
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Hazelnuts"@en ;
+    gs1:ingredientSequence 4
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Peanuts"@en ;
+    gs1:ingredientSequence 5
+  ] ;
+  gs1:ingredientStatement "Almonds, Cashew Nuts, Brazil Nuts, Hazelnuts, Peanuts"@en ;
+  gs1:netWeight [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "200"^^xsd:float
+  ] ;
+  gs1:numberOfServingsPerPackage "8"^^xsd:float ;
+  gs1:numberOfServingsPerPackageMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+  gs1:nutrientBasisQuantity [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "100"^^xsd:string
+  ] ;
+  gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+  gs1:nutrientMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+  gs1:preservationTechnique gs1:PreservationTechniqueCode-UNDER_MODIFIED_ATMOSPHERE ;
+  gs1:proteinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "20.9"^^xsd:float
+  ] ;
+  gs1:saltPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.1"^^xsd:float
+  ] ;
+  gs1:saturatedFatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "7.3"^^xsd:float
+  ] ;
+  gs1:servingSize [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode <http://njh.me/GRM> ;
+    schema:value <http://njh.me/25>
+  ] ;
+  gs1:sugarsPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "4.6"^^xsd:float
+  ] ;
+  schema:description "A mix of almonds, cashew nuts, Brazil nuts, hazelnuts and peanuts. Mixed Nuts."@en ;
+  schema:image [
+    a gs1:ReferencedFileDetails, schema:MediaObject ;
+    schema:height 540 ;
+    schema:url <https://img.tesco.com/Groceries/pi/019/5052320564019/IDShot_540x540.jpg> ;
+    schema:width 540
+  ] ;
+  schema:name "Tesco Unsalted Mixed Nuts"@en .

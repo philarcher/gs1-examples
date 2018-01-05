@@ -1,0 +1,108 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+
+[]
+  a <http://gs1.org/voc/Offer>, <https://schema.org/Offer> ;
+  gs1:itemOffered [
+    a gs1:Beverage, <https://schema.org/Product> ;
+    gs1:calciumPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      gs1:dailyValueIntakePercent "16"^^xsd:float ;
+      schema:unitCode "MGM"^^xsd:string ;
+      schema:value "124"^^xsd:float
+    ] ;
+    gs1:carbohydratesPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "4.8"^^xsd:float
+    ] ;
+    gs1:consumerStorageInstructions "Keep refrigerated. Once opened consume within 3 days and by 'use by' date,shown. Keep upright."@en ;
+    gs1:countryOfLastProcessing [
+      a gs1:Country, schema:Country ;
+      gs1:countryCode "GB"^^xsd:string
+    ] ;
+    gs1:countryOfOrigin [
+      a gs1:Country, schema:Country ;
+      gs1:countryCode "GB"^^xsd:string
+    ] ;
+    gs1:energyPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "KJO"^^xsd:string ;
+      schema:value "209"^^xsd:float
+    ], [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "E14"^^xsd:string ;
+      schema:value "50"^^xsd:float
+    ] ;
+    gs1:fatPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "1.8"^^xsd:float
+    ] ;
+    gs1:fibrePerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.0"^^xsd:float
+    ] ;
+    gs1:foodBeverageRefrigerationClaim gs1:FoodBeverageRefrigerationClaimCode-MUST_BE_REFRIGERATED ;
+    gs1:gtin "05000436338826"^^xsd:string ;
+    gs1:numberOfServingsPerPackage "5"^^xsd:float ;
+    gs1:numberOfServingsPerPackageMeasurementPrecision gs1:MeasurementPrecisionCode-APPROXIMATELY ;
+    gs1:nutrientBasisQuantity [
+      a gs1:QuantitativeValue, schema:QuantitativeValue ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "100"^^xsd:string
+    ] ;
+    gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+    gs1:nutrientMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+    gs1:packaging [
+      a gs1:PackagingDetails ;
+      gs1:packagingType "BO"^^xsd:string
+    ] ;
+    gs1:packagingMarkedDietAllergenType gs1:PackagingMarkedDietAllergenCode-VEGETARIAN ;
+    gs1:packagingMaterial [
+      a gs1:PackagingMaterialDetails ;
+      gs1:packagingMaterialType gs1:PackagingMaterialTypeCode-POLYMER_HDPE
+    ] ;
+    gs1:proteinPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "3.6"^^xsd:float
+    ] ;
+    gs1:provenanceStatement "Produced in the U.K. using milk from the U.K."@en ;
+    gs1:saltPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.1"^^xsd:float
+    ] ;
+    gs1:saturatedFatPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "1.1"^^xsd:float
+    ] ;
+    gs1:sugarsPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "4.8"^^xsd:float
+    ] ;
+    gs1:vitaminB12PerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      gs1:dailyValueIntakePercent "36"^^xsd:float ;
+      schema:unitCode "MC"^^xsd:string ;
+      schema:value "0.9"^^xsd:float
+    ] ;
+    schema:description "Pasteurised homogenised semi skimmed milk. Semi Skimmed British Milk."@en ;
+    schema:name "Tesco Semi-Skimmed Milk 2 pints"@en
+  ] ;
+  schema:description "Tesco Semi-Skimmed Milk 2 pints"@en ;
+  schema:priceSpecification [
+    a gs1:PriceSpecification, schema:PriceSpecification ;
+    schema:eligibleQuantity [
+      a gs1:QuantitativeValue, schema:QuantitativeValue ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:value "1"^^xsd:float
+    ] ;
+    schema:price "0.80"^^xsd:float ;
+    schema:priceCurrency "GBP"^^xsd:string
+  ] .

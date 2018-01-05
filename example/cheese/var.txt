@@ -1,0 +1,10 @@
+URI: .
+
+URI: index.html
+Content-Type: text/html
+
+URI: index.ttl
+Content-Type: application/ld+json
+
+URI: index.ttl
+Content-Type: text/turtle

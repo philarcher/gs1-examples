@@ -1,0 +1,107 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[]
+  a <http://gs1.org/voc/FoodBeverageTobaccoProduct>, <https://schema.org/Product> ;
+  gs1:carbohydratesPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "4.3"^^xsd:float
+  ] ;
+  gs1:consumerStorageInstructions "Store in a cool, dry place.,Once opened, keep refrigerated and consume within 6 weeks."@en ;
+  gs1:drainedWeight [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "215"^^xsd:float
+  ] ;
+  gs1:energyPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "KJO"^^xsd:string ;
+    schema:value "88"^^xsd:float
+  ] ;
+  gs1:fatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.1"^^xsd:float
+  ] ;
+  gs1:fibrePerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "2.0"^^xsd:float
+  ] ;
+  gs1:gpcCategoryCode "10006006"^^xsd:string ;
+  gs1:gpcCategoryDescription "Onions"@en ;
+  gs1:gtin "05060336504622"^^xsd:string ;
+  gs1:ingredient [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Silverskin Onions"@en ;
+    gs1:ingredientSequence 1
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Water"@en ;
+    gs1:ingredientSequence 2
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Spirit Vinegar"@en ;
+    gs1:ingredientSequence 3
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Sugar"@en ;
+    gs1:ingredientSequence 4
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Salt"@en ;
+    gs1:ingredientSequence 5
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Firming Agent (Calcium Chloride)"@en ;
+    gs1:ingredientSequence 6
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Sweetener (Sodium Saccharin)"@en ;
+    gs1:ingredientSequence 7
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Preservative (Sodium Metabisulphite)"@en ;
+    gs1:ingredientSequence 8
+  ] ;
+  gs1:ingredientStatement "Silverskin Onions, Water, Spirit Vinegar, Sugar, Salt, Firming Agent (Calcium Chloride), Sweetener (Sodium Saccharin), Preservative (Sodium Metabisulphite)"@en ;
+  gs1:netWeight [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "400"^^xsd:float
+  ] ;
+  gs1:nutrientBasisQuantity [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "100"^^xsd:string
+  ] ;
+  gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+  gs1:nutrientMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+  gs1:proteinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.5"^^xsd:float
+  ] ;
+  gs1:saltPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "1.62"^^xsd:float
+  ] ;
+  gs1:saturatedFatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.0"^^xsd:float
+  ] ;
+  gs1:sugarsPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "4.3"^^xsd:float
+  ] ;
+  schema:brand [
+    a gs1:Brand, schema:Brand ;
+    schema:name "Haywards"@en
+  ] ;
+  schema:description "Silverskin Onions Pickled in a Sweet & Mild Vinegar with Sugar and Sweetener"@en ;
+  schema:name "Haywards Silverskin Onions Sweet & Mild 400g"@en .

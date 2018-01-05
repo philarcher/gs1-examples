@@ -1,0 +1,183 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[]
+  a <http://gs1.org/voc/FoodBeverageTobaccoProduct>, <https://schema.org/Product> ;
+  gs1:allergenStatement "Contains wholewheat and barley"@en ;
+  gs1:carbohydratesPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "79"^^xsd:float
+  ] ;
+  gs1:dietCode [
+    a gs1:DietTypeCodeDetails ;
+    gs1:dietType gs1:DietTypeCode-VEGETARIAN
+  ] ;
+  gs1:dietTypeDescription "Suitable for vegetarians"@en ;
+  gs1:energyPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "KJO"^^xsd:string ;
+    schema:value "1588"^^xsd:float
+  ] ;
+  gs1:fatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "1.5"^^xsd:float
+  ] ;
+  gs1:fibrePerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "4.5"^^xsd:float
+  ] ;
+  gs1:folicAcidPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MC"^^xsd:string ;
+    schema:value "334"^^xsd:float
+  ] ;
+  gs1:foodBeverageTargetUse gs1:FoodBeverageTargetUseCode-BREAKFAST ;
+  gs1:functionalName "breakfast cereal"@en ;
+  gs1:gpcCategoryCode "10000284"^^xsd:string ;
+  gs1:gpcCategoryDescription "Cereals Products - Ready to Eat (Shelf Stable)"@en ;
+  gs1:gtin "05000127163195"^^xsd:string ;
+  gs1:hasAllergen [
+    a gs1:AllergenDetails ;
+    gs1:allergenLevelOfContainmentCode gs1:LevelOfContainmentCode-CONTAINS ;
+    gs1:allergenType gs1:AllergenTypeCode-WHEAT
+  ], [
+    a gs1:AllergenDetails ;
+    gs1:allergenLevelOfContainmentCode gs1:LevelOfContainmentCode-CONTAINS ;
+    gs1:allergenType gs1:AllergenTypeCode-BARLEY
+  ], [
+    a gs1:AllergenDetails ;
+    gs1:allergenLevelOfContainmentCode gs1:LevelOfContainmentCode-MAY_CONTAIN ;
+    gs1:allergenType gs1:AllergenTypeCode-MILK
+  ] ;
+  gs1:ingredient [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientContentPercentage "46"^^xsd:float ;
+    gs1:ingredientName "Rice"@en ;
+    gs1:ingredientSequence 1
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientContentPercentage "37"^^xsd:float ;
+    gs1:ingredientName "Wholewheat"@en ;
+    gs1:ingredientSequence 2
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Sugar"@en ;
+    gs1:ingredientSequence 3
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientContentPercentage "5"^^xsd:float ;
+    gs1:ingredientName "Barley"@en ;
+    gs1:ingredientSequence 4
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientContentPercentage "3.5"^^xsd:float ;
+    gs1:ingredientName "Malted Barley Flour"@en ;
+    gs1:ingredientSequence 5
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Barley Malt Flavouring"@en ;
+    gs1:ingredientSequence 6
+  ], [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Salt"@en ;
+    gs1:ingredientSequence 7
+  ] ;
+  gs1:ingredientOfConcern "Wholewheat"@en, "Barley"@en ;
+  gs1:ingredientStatement "Rice (46%), Wholewheat (37%), Sugar, Barley (5%), Malted Barley Flour (3.5%), Barley Malt Flavouring, Salt"@en ;
+  gs1:ironPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "11.6"^^xsd:float
+  ] ;
+  gs1:netWeight [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "500"^^xsd:float
+  ] ;
+  gs1:niacinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "13.4"^^xsd:float
+  ] ;
+  gs1:numberOfServingsPerPackage "16"^^xsd:float ;
+  gs1:numberOfServingsPerPackageMeasurementPrecision gs1:MeasurementPrecisionCode-APPROXIMATELY ;
+  gs1:nutrientBasisQuantity [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "100"^^xsd:string
+  ] ;
+  gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+  gs1:nutrientMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+  gs1:proteinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "9"^^xsd:float
+  ] ;
+  gs1:riboflavinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "2.3"^^xsd:float
+  ] ;
+  gs1:saltPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "1"^^xsd:float
+  ] ;
+  gs1:saturatedFatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.3"^^xsd:float
+  ] ;
+  gs1:servingSize [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode <http://njh.me/GRM> ;
+    schema:value <http://njh.me/30>
+  ] ;
+  gs1:sugarsPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "15"^^xsd:float
+  ] ;
+  gs1:targetMarket [
+    a gs1:TargetMarketDetails ;
+    gs1:targetMarketCountries [
+      a gs1:Country, schema:Country ;
+      gs1:countryCode "GB"^^xsd:string
+    ]
+  ] ;
+  gs1:thiaminPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "1.8"^^xsd:float
+  ] ;
+  gs1:vitaminB12PerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MC"^^xsd:string ;
+    schema:value "2.1"^^xsd:float
+  ] ;
+  gs1:vitaminB6PerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "1.2"^^xsd:float
+  ] ;
+  gs1:vitaminDPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MC"^^xsd:string ;
+    schema:value "8.4"^^xsd:float
+  ] ;
+  gs1:zincPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "8.4"^^xsd:float
+  ] ;
+  schema:brand [
+    a gs1:Brand, schema:Brand ;
+    gs1:subBrandName "Special K"@en ;
+    schema:name "Kellogg's"@en
+  ] ;
+  schema:description "Crunchy rice, wholewheat & barley flakes"@en ;
+  schema:name "Kellogg's Special K Original 500g"@en .

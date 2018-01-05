@@ -1,0 +1,134 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+
+[]
+  a <http://gs1.org/voc/MilkButterCreamYogurtCheeseEggsSubstitutes>, <https://schema.org/Product> ;
+  gs1:awardPrize [
+    a gs1:AwardPrizeDetails ;
+    gs1:awardPrizeCountryCode [
+      a gs1:Country, <https://schema.org/Country> ;
+      gs1:countryCode "GB"^^xsd:string
+    ] ;
+    gs1:awardPrizeDescription "Gold Award"@en ;
+    gs1:awardPrizeJury "International Cheese Awards, Nantwich, est. 1897"@en ;
+    gs1:awardPrizeName "International Cheese Awards"@en ;
+    gs1:awardPrizeYear "2013"^^xsd:gYear
+  ] ;
+  gs1:calciumPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "MGM"^^xsd:string ;
+    schema:value "739"^^xsd:float
+  ] ;
+  gs1:carbohydratesPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.1"^^xsd:float
+  ] ;
+  gs1:cheeseFirmness gs1:CheeseFirmnessCode-HARD ;
+  gs1:cheeseMaturationPeriodDescription "matured for 18 months"@en ;
+  gs1:consumerPackageDisclaimer "Packaged in a protective atmosphere.  Easy to open reclosable label."@en ;
+  gs1:consumerStorageInstructions "Keep refrigerated 2-5°C. To enjoy this product at its best, consume within 7 days of opening"@en ;
+  gs1:countryOfLastProcessing [
+    a gs1:Country, schema:Country ;
+    gs1:countryCode "GB"^^xsd:string
+  ] ;
+  gs1:countryOfOrigin [
+    a gs1:Country, schema:Country ;
+    gs1:countryCode "GB"^^xsd:string
+  ] ;
+  gs1:dietTypeDescription "Suitable for vegetarians"@en ;
+  gs1:energyPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "KJO"^^xsd:string ;
+    schema:value "1725"^^xsd:float
+  ], [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "E14"^^xsd:string ;
+    schema:value "416"^^xsd:float
+  ] ;
+  gs1:fatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "34.9"^^xsd:float
+  ] ;
+  gs1:fatpercentageInDryMatter "34.9"^^xsd:float ;
+  gs1:gpcCategoryCode "10000028"^^xsd:string ;
+  gs1:gpcCategoryDescription "Cheese/Cheese Substitutes (Perishable)"@en ;
+  gs1:gtin "05000295145009"^^xsd:string ;
+  gs1:ingredient [
+    a gs1:FoodBeverageTobaccoIngredientDetails ;
+    gs1:ingredientName "Milk"@en ;
+    gs1:ingredientSequence 1
+  ] ;
+  gs1:ingredientStatement "Milk"@en ;
+  gs1:isRindEdible gs1:NonbinaryLogicCode-NOT_APPLICABLE ;
+  gs1:isSliced gs1:NonbinaryLogicCode-FALSE ;
+  gs1:netWeight [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "320"^^xsd:float
+  ] ;
+  gs1:nutrientBasisQuantity [
+    a gs1:QuantitativeValue, schema:QuantitativeValue ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "100"^^xsd:string
+  ] ;
+  gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+  gs1:packaging [
+    a gs1:PackagingDetails ;
+    gs1:packagingRecyclingProcessType gs1:PackagingRecyclingProcessTypeCode-REUSABLE ;
+    gs1:packagingShape gs1:PackagingShapeCode-RECTANGULAR ;
+    gs1:packagingType "BG"^^xsd:string
+  ] ;
+  gs1:packagingMarkedDietAllergenType gs1:PackagingMarkedDietAllergenCode-VEGETARIAN ;
+  gs1:packagingMaterial [
+    a gs1:PackagingMaterialDetails ;
+    gs1:packagingMaterialType gs1:PackagingMaterialTypeCode-POLYMER_PE
+  ] ;
+  gs1:preparationInformation [
+    a gs1:FoodAndBeveragePreparationInformation ;
+    gs1:preparationCode gs1:PreparationTypeCode-REFRIGERATE ;
+    gs1:preparationConsumptionPrecautions "Contains naturally occurring crunchy calcium crystals which are found in high quality aged cheddars."@en
+  ] ;
+  gs1:productFormDescription "block of cheese"@en ;
+  gs1:productMarketingMessage "A balance of intense flavour, rugged texture and subtle creaminess, typically matured for eighteen months"@en ;
+  gs1:proteinPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "25.4"^^xsd:float
+  ] ;
+  gs1:provenanceStatement "Made in Cornwall, UK from West Country Milk"@en ;
+  gs1:referencedFile [
+    a gs1:ReferencedFileDetails, schema:MediaObject ;
+    gs1:referencedFileType gs1:ReferencedFileTypeCode-WEBSITE ;
+    schema:url <http://davidstowcheddar.co.uk/our-cheddars/18-month-extra-mature/>
+  ] ;
+  gs1:saltPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "1.8"^^xsd:float
+  ] ;
+  gs1:saturatedFatPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "21.7"^^xsd:float
+  ] ;
+  gs1:sharpnessOfCheese gs1:SharpnessOfCheeseCode-EXTRA_SHARP ;
+  gs1:sugarsPerNutrientBasis [
+    a gs1:NutritionMeasurementType ;
+    schema:unitCode "GRM"^^xsd:string ;
+    schema:value "0.1"^^xsd:float
+  ] ;
+  schema:brand [
+    a gs1:Brand, schema:Brand ;
+    schema:name "Davidstow"@en
+  ] ;
+  schema:description "extra mature cheddar cheese"@en ;
+  schema:image [
+    a gs1:ReferencedFileDetails, schema:MediaObject ;
+    schema:height 568 ;
+    schema:url <http://davidstowcheddar.co.uk/wp-content/uploads/2017/11/DAVIDSTOW-Extra-Mature-PACK-18-Months.png> ;
+    schema:width 972
+  ] ;
+  schema:name "Davidstow Extra Mature Cheddar Cornish Crackler"@en .

@@ -1,0 +1,103 @@
+@prefix gs1: <http://gs1.org/voc/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[]
+  a <http://gs1.org/voc/Offer>, <https://schema.org/Offer> ;
+  gs1:itemOffered [
+    a gs1:FruitsVegetables, <https://schema.org/Product> ;
+    gs1:carbohydratesPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "8.0"^^xsd:float
+    ] ;
+    gs1:countryOfOrigin [
+      a gs1:Country, schema:Country ;
+      gs1:countryCode "ES"^^xsd:string
+    ] ;
+    gs1:energyPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "KJO"^^xsd:string ;
+      schema:value "165"^^xsd:float
+    ], [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "E14"^^xsd:string ;
+      schema:value "39"^^xsd:float
+    ] ;
+    gs1:fatPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.5"^^xsd:float
+    ] ;
+    gs1:fibrePerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "1.3"^^xsd:float
+    ] ;
+    gs1:healthClaimDescription "2 tangerines count as 1 of your 5 a-day"@en ;
+    gs1:isPittedStoned gs1:NonbinaryLogicCode-NOT_APPLICABLE ;
+    gs1:isSeedless gs1:NonbinaryLogicCode-TRUE ;
+    gs1:isShelledPeeled gs1:NonbinaryLogicCode-FALSE ;
+    gs1:isWashedReadyToEat gs1:NonbinaryLogicCode-UNSPECIFIED ;
+    gs1:netWeight [
+      a gs1:QuantitativeValue, schema:QuantitativeValue ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "600"^^xsd:float
+    ] ;
+    gs1:nutrientBasisQuantity [
+      a gs1:QuantitativeValue, schema:QuantitativeValue ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "100"^^xsd:string
+    ] ;
+    gs1:nutrientBasisQuantityType gs1:NutrientBasisQuantityCode-BY_MEASURE ;
+    gs1:nutrientMeasurementPrecision gs1:MeasurementPrecisionCode-EXACT ;
+    gs1:nutritionalClaimStatement "High in vitamin C.  Vitamin C plays a role in the formation of collagen for blood vessels, bone, cartilage, gums, skin and teeth.  Enjoy as part of a varied and balanced diet and healthy lifestyle."@en ;
+    gs1:preparationInformation [
+      a gs1:FoodAndBeveragePreparationInformation ;
+      gs1:maximumOptimumConsumptionTemperature [
+        a gs1:QuantitativeValue, schema:QuantitativeValue ;
+        schema:unitCode <http://njh.me/CEL> ;
+        schema:value <http://njh.me/25>
+      ] ;
+      gs1:minimumOptimumConsumptionTemperature [
+        a gs1:QuantitativeValue, schema:QuantitativeValue ;
+        schema:unitCode <http://njh.me/CEL> ;
+        schema:value <http://njh.me/20>
+      ] ;
+      gs1:preparationConsumptionPrecautions "Wash before use."@en ;
+      gs1:preparationInstructions "For best flavour, serve at room temperature.  "@en
+    ] ;
+    gs1:productMarketingMessage "Tangy and intense"@en ;
+    gs1:proteinPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.9"^^xsd:float
+    ] ;
+    gs1:saltPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.01"^^xsd:float
+    ] ;
+    gs1:saturatedFatPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "0.1"^^xsd:float
+    ] ;
+    gs1:sugarsPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "GRM"^^xsd:string ;
+      schema:value "8.0"^^xsd:float
+    ] ;
+    gs1:vitaminCPerNutrientBasis [
+      a gs1:NutritionMeasurementType ;
+      schema:unitCode "MGM"^^xsd:string ;
+      schema:value "30"^^xsd:float
+    ] ;
+    schema:brand [
+      a gs1:Brand, schema:Brand ;
+      schema:name "Sainsbury's"@en
+    ] ;
+    schema:description "Tangerines.  Variety: Clemenvilla"@en ;
+    schema:name "Tangerines 600g"@en ;
+    schema:productID "1246391"^^xsd:string
+  ] .
